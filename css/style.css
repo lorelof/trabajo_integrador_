@@ -1,0 +1,49 @@
+header {
+  position: sticky;
+  top: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: gray;
+  padding: 2rem;
+  margin: 2rem;
+}
+.nav-link a :hover {
+  background-color: hotpink;
+  color: gray;
+  text-transform: uppercase;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 1rem;
+  margin: 2rem;
+}
+ul li :hover {
+  background-color: lightpink;
+  color: hotpink;
+}
+
+nav a {
+  background-color: lightpink;
+}
+nav a :hover {
+  text-transform: uppercase;
+  color: bisque;
+}
+
+figure img {
+  height: 100px;
+  width: auto;
+  display: grid;
+}
+
+.btn {
+  background-color: hotpink;
+  color: bisque;
+  border-radius: 45%;
+}/*# sourceMappingURL=style.css.map */

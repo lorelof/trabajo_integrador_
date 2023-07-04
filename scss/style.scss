@@ -1,0 +1,50 @@
+@import "spacing";
+@import "colors";
+
+header {
+    position: sticky;
+    top: 0;
+    padding: $pd1;
+    text-align: center;
+}
+.nav-link a{
+    text-decoration: none;
+    color: $terc;
+    padding: $pd2;
+    margin: $mg2;
+
+    :hover {
+    background-color: $secund;
+    color: $terc;
+    text-transform: uppercase;
+}
+}
+ul li{
+    list-style-type: none;
+    display: inline;
+    padding: $pd1;
+    margin: $mg2;
+   :hover {
+    background-color: $ppal;
+    color: $secund;
+   }
+}
+
+nav a {
+    background-color: $ppal;
+    :hover {
+        text-transform: uppercase;
+        color: $cuart;
+    }
+
+}
+figure img {
+    height: 100px;
+    width: auto;
+    display: grid;
+}
+.btn {
+    background-color: $secund;
+    color: $cuart;
+    border-radius: 45%;
+}
