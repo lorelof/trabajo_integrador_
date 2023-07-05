@@ -3,32 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
+
     <title>Trabajo Integrador</title>
 </head>
 <body>
 
     <header>
+        <div class="heading">
         <div>
             <h1>Tienda de Plantas</h1>
         </div>
         
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" id="main" href="#">Main</a>
-                        <a class="nav-link" id="gallery" href="#">Galería</a>
-                        <a class="nav-link" id="contact" href="contact">Contacto</a>
-                    </div>
-                </div>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#main">Main</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Galería</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+              </ul>
             </div>
-        </nav>
-        
+          </div>
+        </nav>      
+      </div> 
     </header>
 
+
+    <div class="container">
     <main id="main">
         <h2>Cuidado de Plantas</h2>
         <section>
@@ -42,40 +59,52 @@
             </article>
         </section>
     </main>
-
-    <section> <a href="gallery" id="gallery"</a>
-        <figure>
+        
+        <section class="gallery" id="gallery">
+          <h3>Las elegidas del mes</h3>
+          <figure class="img1">
             <img src="/assets/img/card1.jpg" alt="">
         </figure>
-        <figure>
-            <img src="/assets/img/card2.jpg" alt="">
+        <figure class="img2">
+          <img src="/assets/img/card2.jpg" alt="">
         </figure>
-        <figure>
-            <img src="/assets/img/card3.jpg" alt="">
+        <figure class="img3">
+          <img src="/assets/img/card3.jpg" alt="">
         </figure>
-    </section>
-
-    <section>
-        <div> <a href="contact"></a>
+        <figure class="img4">
+          <img src="/assets/img/card4.jpg" alt="">
+        </figure>
+      </section>
+    
+    <!-- ver error de grid en clases y tags -->
+    <section class="contact" id="contact"> 
             <h3>Contactános</h3>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu mail">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlTextarea1" class="form-label">Dejános tu consulta</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" cols="60"></textarea>
               </div>
-              <div>
+              <div class="btn1">
                 <button class="btn">Enviar</button>
-              </div>
-        </div>
+              </div>        
     </section>
+  </div>
 
-    <footer>
+    <footer class="ftr">
+            <div class="ftr1">
+            <p>Recibimos WhatsApp</p>
             <p>011-3016-8965</p>
             <p>hola@plantas.com.ar</p>
+            
+          </div>
+          <div class="ftr2">
+            <p>Visitános en nuestro local</p>
+            <p>Avda Salta N° 2706</p>
             <p>Lomas del Mirador</p>
+          </div>
     </footer>
 
 </body>

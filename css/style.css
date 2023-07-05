@@ -1,49 +1,133 @@
-header {
+body {
+  width: 100%;
+  display: block;
+}
+
+.heading {
   position: sticky;
   top: 0;
   padding: 1rem;
   text-align: center;
+  margin-bottom: 2rem;
+  background-color: crimson;
 }
-
-.nav-link a {
-  text-decoration: none;
-  color: gray;
-  padding: 2rem;
-  margin: 2rem;
-}
-.nav-link a :hover {
-  background-color: hotpink;
-  color: gray;
-  text-transform: uppercase;
+.heading h1 {
+  color: bisque;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 ul li {
-  list-style-type: none;
-  display: inline;
-  padding: 1rem;
-  margin: 2rem;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 ul li :hover {
-  background-color: lightpink;
-  color: hotpink;
-}
-
-nav a {
-  background-color: lightpink;
-}
-nav a :hover {
   text-transform: uppercase;
   color: bisque;
+  background-color: coral;
 }
 
-figure img {
-  height: 100px;
-  width: auto;
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 15px;
+}
+
+main {
+  width: 100%;
+  grid-area: main;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  background-color: bisque;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.gallery {
+  height: 100%;
+  width: 90%;
+  grid-area: figure;
+  gap: 50px;
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30px 1fr 1fr;
+  grid-template-areas: "h3 h3" "img1 img2" "img3 img4";
+}
+.gallery img {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+h3 {
+  grid-area: h3;
+  margin-top: 1rem;
+}
+
+.img1 {
+  grid-area: img1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.img2 {
+  grid-area: img2;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.img3 {
+  grid-area: img3;
+  text-align: center;
+}
+
+.img4 {
+  grid-area: img4;
+  text-align: center;
+}
+
+.form-label {
+  padding-top: 1rem;
+  padding-bottom: 0;
+  display: block;
+  color: crimson;
+  font-size: medium;
+}
+
+.form-control {
+  padding-top: 1rem;
+  background-color: bisque;
+}
+
+.btn1 {
+  text-align: center;
 }
 
 .btn {
-  background-color: hotpink;
+  background-color: crimson;
   color: bisque;
   border-radius: 45%;
+}
+
+.contact {
+  grid-area: contact;
+  height: 400px;
+  width: 80%;
+}
+
+.ftr {
+  margin: 2rem;
+  height: 150px;
+  background-color: coral;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

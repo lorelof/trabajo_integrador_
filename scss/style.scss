@@ -1,50 +1,129 @@
 @import "spacing";
 @import "colors";
 
-header {
+body{
+    width: 100%;
+    display: block;
+}
+
+.heading {
     position: sticky;
     top: 0;
     padding: $pd1;
     text-align: center;
-}
-.nav-link a{
-    text-decoration: none;
-    color: $terc;
-    padding: $pd2;
-    margin: $mg2;
-
-    :hover {
+    margin-bottom: $mg2;
     background-color: $secund;
-    color: $terc;
-    text-transform: uppercase;
+    h1 {
+        color: $cuart;
+        text-align: center;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
 }
-}
-ul li{
-    list-style-type: none;
-    display: inline;
-    padding: $pd1;
-    margin: $mg2;
-   :hover {
-    background-color: $ppal;
-    color: $secund;
-   }
-}
-
-nav a {
-    background-color: $ppal;
+ul li {
+    color: $quint;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     :hover {
         text-transform: uppercase;
         color: $cuart;
+        background-color: $sexto;
     }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    gap: 15px;   
+}
 
+main{
+    width: 100%;
+    grid-area: main;
+    margin-top: $mg1;
+    padding-top: $pd1;
+    background-color: $cuart;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-figure img {
-    height: 100px;
-    width: auto;
+
+.gallery {
+    height: 100%;
+    width: 90%;
+    grid-area: figure;
+    gap: 50px;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30px 1fr 1fr;
+    grid-template-areas: 
+    "h3 h3"
+    "img1 img2"
+    "img3 img4";
+    img {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
 }
+h3{
+    grid-area: h3;
+    margin-top: $mg1;
+}
+.img1{
+    grid-area: img1;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.img2{
+    grid-area: img2;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.img3{
+    grid-area: img3;
+    text-align: center;
+}
+.img4{
+    grid-area: img4;
+    text-align: center;
+}
+
+.form-label{
+    padding-top: $pd1;
+    padding-bottom: 0;
+    display: block;
+    color: crimson;
+    font-size: medium;
+}
+.form-control{
+    padding-top: $pd1;
+    background-color: $cuart;
+}
+.btn1 {
+    text-align: center;
+}
+
 .btn {
     background-color: $secund;
     color: $cuart;
     border-radius: 45%;
+}
+.contact{
+    grid-area: contact;
+    height: 400px;
+    width: 80%;
+}
+
+.ftr {
+    margin: $mg2;
+    height: 150px;
+    background-color: $sexto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    //text-align: center;
+    padding: $pd1;
 }
